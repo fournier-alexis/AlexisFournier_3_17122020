@@ -102,3 +102,14 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Idea files
+.idea/
+
+# Package files
+package.json
+package-lock.json
+
+# Scss files
+scss
+css/style.css.map
