@@ -1,3 +1,112 @@
+@charset "UTF-8";
+/*Imports ------------------------------------------------------------------------------------------------------------*/
+/*Changement de police------------------------------------------------------------------------------------------------*/
+h1 {
+  font-family: "Shrikhand-Regular", sans-serif;
+}
 
+/*Suppression de la marge par défaut et ajout de la police------------------------------------------------------------*/
+body {
+  margin: 0;
+  font-family: "Roboto-Regular", sans-serif;
+}
+
+/*Ajout de la marge générale------------------------------------------------------------------------------------------*/
+#entete, footer {
+  margin-top: 8%;
+}
+
+main {
+  margin-top: 3%;
+}
+
+#entete, article {
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+#entete {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+}
+#entete i {
+  display: none;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+#entete img {
+  grid-row: 1/4;
+  grid-column: 2/3;
+  width: 196px;
+  height: 34px;
+}
+
+main #navigation {
+  padding-bottom: 10%;
+  text-align: center;
+  background-color: #F6F6F6;
+  box-shadow: 0 4px 10px 2px #F6F6F6;
+}
+main #navigation div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EAEAEA;
+}
+main #navigation div i {
+  margin-right: 5%;
+}
+main #navigation div p {
+  margin-right: 15%;
+}
+main #navigation nav {
+  padding-top: 10%;
+}
+main #navigation nav h1 {
+  font-size: x-large;
+  margin: 4% 10%;
+}
+main #navigation nav h3 {
+  margin-top: 4%;
+  margin-bottom: 10%;
+  font-size: medium;
+  font-weight: normal;
+}
+main #navigation nav button {
+  padding: 22px;
+  border: none;
+  border-radius: 50px;
+  color: #FFFFFF;
+  box-shadow: 1px 3px 10px grey;
+  outline: none;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+}
+main article {
+  margin-top: 10%;
+}
+main article h2 {
+  margin: 0;
+}
+main article ol {
+  counter-reset: item;
+}
+main article ol li::marker {
+  color: white;
+  content: counter(item) "";
+  counter-increment: item;
+}
+
+ol {
+  background-color: gray;
+}
+
+li {
+  background-color: chartreuse;
+}
+
+span {
+  background-color: darkgoldenrod;
+}
 
 /*# sourceMappingURL=style.css.map */
