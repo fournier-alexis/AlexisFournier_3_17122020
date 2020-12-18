@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="css/all.min.css">
 </head>
 <body>
+    <div class="container">
+        <div class="rond" id="r1"></div>
+        <div class="rond" id="r2"></div>
+        <div class="rond" id="r3"></div>
+    </div>
     <header id="entete">
         <i class="fas fa-arrow-left"></i>
         <img src="src/ohmyfood.svg" alt="Logo">
@@ -22,7 +27,9 @@
             <nav>
                 <h1>Réservez le menu qui vous convient</h1>
                 <h3>Découvrez des restaurants d'exceptions, sélectionnés par nos soins.</h3>
-                <button>Explorer nos restaurants</button>
+                <a href="#restaurants">
+                    <button>Explorer nos restaurants</button>
+                </a>
             </nav>
         </header>
         <article>
@@ -30,76 +37,88 @@
             <ol>
                 <li>
                     <i class="fas fa-mobile-alt"></i>
-                    <p>Choisissez un restaurant</p>
+                    Choisissez un restaurant
                 </li>
                 <li>
                     <i class="fas fa-list"></i>
-                    <p>Composez votre menu</p>
+                    Composez votre menu
                 </li>
                 <li>
                     <i class="fas fa-store"></i>
-                    <p>Dégustez au restaurant</p>
+                    Dégustez au restaurant
                 </li>
             </ol>
         </article>
         <article>
-            <h2></h2>
-            <a href="">
+            <h2 id="restaurants">Restaurants</h2>
+            <a href="menus/laPaletteDuGout.html">
                 <div class="image">
-                    <div class="tag"></div>
-                    <img src="" alt="">
+                    <div class="tag">Nouveau</div>
+                    <img src="src/images/laPaletteDuGout.jpg" alt="La palette du goût">
                 </div>
                 <div class="informations">
-                    <h3></h3>
-                    <p></p>
-                    <i></i>
+                    <h3>La palette du goût</h3>
+                    <p>Ménilmontant</p>
+                    <div class="icon-heart">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                    </div>
                 </div>
             </a>
-            <a href="">
+            <a href="menus/laNoteEnchantee.html">
                 <div class="image">
-                    <div class="tag"></div>
-                    <img src="" alt="">
+                    <div class="tag">Nouveau</div>
+                    <img src="src/images/laNoteEnchantee.jpg" alt="La note enchantée">
                 </div>
                 <div class="informations">
-                    <h3></h3>
-                    <p></p>
-                    <i></i>
+                    <h3>La note enchantée</h3>
+                    <p>Charonne</p>
+                    <div class="icon-heart">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                    </div>
                 </div>
             </a>
-            <a href="">
+            <a href="menus/aLaFrancaise.html">
                 <div class="image">
-                    <img src="" alt="">
+                    <img src="src/images/aLaFrancaise.jpg" alt="À la française">
                 </div>
                 <div class="informations">
-                    <h3></h3>
-                    <p></p>
-                    <i></i>
+                    <h3>À la française</h3>
+                    <p>Cité Rouge</p>
+                    <div class="icon-heart">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                    </div>
                 </div>
             </a>
-            <a href="">
+            <a href="menus/leDeliceDesSens.html">
                 <div class="image">
-                    <img src="" alt="">
+                    <img src="src/images/leDeliceDesSens.jpg" alt="Le délice des sens">
                 </div>
                 <div class="informations">
-                    <h3></h3>
-                    <p></p>
-                    <i></i>
+                    <h3>Le délice des sens</h3>
+                    <p>Folie-Méricourt</p>
+                    <div class="icon-heart">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                    </div>
                 </div>
             </a>
         </article>
     </main>
     <footer>
-        <img src="" alt="">
-        <span>
-            <i></i>
-            <a href=""></a>
-        </span>
-        <span>
-            <i></i>
-            <a href=""></a>
-        </span>
-        <a href=""></a>
-        <a href="mailto:pro.fournieralexis@gmail.com"></a>
+        <img src="src/ohmyfood.svg" alt="logo footer">
+        <a href="#">
+            <i class="fas fa-utensils"></i>
+            Proposer un restaurant
+        </a>
+        <a href="#">
+            <i class="fas fa-hands-helping"></i>
+            Devenir partenaire
+        </a>
+        <a href="#">Mentions légales</a>
+        <a href="mailto:pro.fournieralexis@gmail.com">Contact</a>
     </footer>
 </body>
 </html>
