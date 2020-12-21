@@ -1,0 +1,137 @@
+/*Imports ------------------------------------------------------------------------------------------------------------*/
+/*Couleurs : */
+/*Polices*/
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../../src/fonts/Shrikhand-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../src/fonts/Roboto-Regular.ttf") format("ttf");
+}
+/*Animation*/
+main:not(.container), footer:not(.container) {
+  visibility: visible;
+}
+
+#entete a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  background-color: #F6F6F6;
+}
+main #navigation {
+  padding-bottom: 0;
+}
+main #navigation img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+main article:first-of-type {
+  background-color: #F6F6F6;
+  display: grid;
+  grid-template-columns: auto 100px;
+  position: relative;
+  top: -50px;
+  margin: 0;
+  border-radius: 40px 40px 0 0;
+}
+main article:first-of-type h2 {
+  margin: 30px 0 0 9%;
+  font-family: "Shrikhand", sans-serif;
+  font-weight: normal;
+}
+main article:first-of-type .icon-heart {
+  margin-top: 30px;
+  align-self: center;
+}
+main article:not(:first-of-type) {
+  margin: 0;
+  position: relative;
+  top: -25px;
+  padding-bottom: 25px;
+}
+main article:not(:first-of-type) h3 {
+  width: fit-content;
+  font-weight: normal;
+  font-variant: all-small-caps;
+  margin: 0 6% 2% 6%;
+}
+main article:not(:first-of-type) h3:after {
+  display: block;
+  content: "";
+  width: 40px;
+  border-bottom: solid 3px #99E2D0;
+}
+main article:not(:first-of-type) a {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 6%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 3px 10px #EAEAEA;
+  text-decoration: none;
+  color: black;
+}
+main article:not(:first-of-type) a .plat {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+}
+main article:not(:first-of-type) a .plat h4 {
+  margin: 5px 10px;
+}
+main article:not(:first-of-type) a .plat .prix {
+  display: flex;
+  justify-content: space-between;
+}
+main article:not(:first-of-type) a .plat .prix h5 {
+  display: -webkit-box;
+  max-width: fit-content;
+  overflow: hidden;
+  margin: 5px 10px;
+  font-weight: normal;
+}
+main article:not(:first-of-type) a .plat .prix p {
+  width: fit-content;
+  margin: 5px 20px;
+  align-self: flex-end;
+  font-weight: bold;
+  font-size: small;
+}
+main article:not(:first-of-type) a .selection {
+  width: 0;
+  grid-column: 2/4;
+  grid-row: 1/3;
+  background-color: #99E2D0;
+  border-radius: 0 10px 10px 0;
+  text-align-last: center;
+  overflow: hidden;
+  transition: all 300ms linear;
+}
+main article:not(:first-of-type) a .selection i {
+  display: block;
+  position: relative;
+  top: 20%;
+  visibility: hidden;
+  color: white;
+  font-size: xx-large;
+  transition: all 400ms linear;
+}
+main article:not(:first-of-type) a:hover {
+  transform: scale(1);
+}
+main article:not(:first-of-type) a:hover .selection {
+  width: 20%;
+  transform-origin: right;
+}
+main article:not(:first-of-type) a:hover .selection i {
+  visibility: visible;
+  transform: rotate(360deg);
+}
+
+/*# sourceMappingURL=menu.css.map */

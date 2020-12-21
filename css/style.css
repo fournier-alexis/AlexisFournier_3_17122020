@@ -2,6 +2,14 @@
 /*Imports ------------------------------------------------------------------------------------------------------------*/
 /*Couleurs : */
 /*Polices*/
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../../src/fonts/Shrikhand-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../src/fonts/Roboto-Regular.ttf") format("ttf");
+}
 /*Animation*/
 /*Keyframes ----------------------------------------------------------------------------------------------------------*/
 @keyframes afficherLoading {
@@ -36,13 +44,13 @@
 }
 /*Changement de police------------------------------------------------------------------------------------------------*/
 h1 {
-  font-family: "Shrikhand-Regular", sans-serif;
+  font-family: "Shrikhand", sans-serif;
 }
 
 /*Suppression de la marge par défaut et ajout de la police------------------------------------------------------------*/
 body {
   margin: 0;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*Ajout de la marge générale------------------------------------------------------------------------------------------*/
@@ -57,7 +65,7 @@ main {
 
 /*Loading animation---------------------------------------------------------------------------------------------------*/
 .container {
-  display: none;
+  display: flex;
   justify-content: center;
   visibility: visible;
   align-items: center;
@@ -95,7 +103,7 @@ main {
   grid-template-rows: repeat(3, auto);
   margin-top: 8%;
 }
-#entete i {
+#entete a {
   display: none;
   grid-column: 1/2;
   grid-row: 2/3;
@@ -107,11 +115,12 @@ main {
   height: 34px;
 }
 
-main:not(.container) {
-  /*visibility: hidden;
-  animation: afficherPage $duree_totale;
-  animation-fill-mode: forwards; A CHANGER AVANT DE RENDRE*/
+main:not(.container), footer:not(.container) {
+  visibility: hidden;
+  animation: afficherPage 4200ms;
+  animation-fill-mode: forwards;
 }
+
 main #navigation {
   padding-bottom: 10%;
   text-align: center;
@@ -133,7 +142,9 @@ main #navigation nav {
   padding-top: 10%;
 }
 main #navigation nav h1 {
+  font-family: "Roboto", sans-serif;
   font-size: x-large;
+  font-weight: bold;
   margin: 4% 10%;
 }
 main #navigation nav h3 {
@@ -150,12 +161,12 @@ main #navigation nav button {
   box-shadow: 1px 3px 12px grey;
   outline: none;
   background-image: linear-gradient(#FF79DA, #9356DC);
-  transition: all 1s;
+  transition: opacity 500ms, box-shadow 500ms;
 }
 main #navigation nav button:hover {
   cursor: pointer;
-  box-shadow: 1px 3px 3px grey;
-  background-image: linear-gradient(#FF8AEB, #A467ED);
+  box-shadow: 1px 3px 3px black;
+  opacity: 85%;
 }
 main article {
   margin-top: 10%;
@@ -252,18 +263,23 @@ main article:last-child a .informations p {
   align-self: end;
   margin-top: 5px;
 }
-main article:last-child a .informations .icon-heart {
+main article:last-child a:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+.icon-heart {
   grid-row: 1/2;
   grid-column: 2/3;
   text-align: center;
   font-size: larger;
   align-self: end;
 }
-main article:last-child a .informations .icon-heart i:first-child {
+.icon-heart i:first-child {
   opacity: 1;
   transition: opacity 0.4s ease-in-out;
 }
-main article:last-child a .informations .icon-heart i:last-child {
+.icon-heart i:last-child {
   position: relative;
   left: -25px;
   opacity: 0;
@@ -272,15 +288,11 @@ main article:last-child a .informations .icon-heart i:last-child {
   -webkit-text-fill-color: transparent;
   transition: opacity 0.4s ease-in-out;
 }
-main article:last-child a .informations .icon-heart:hover i:first-child {
+.icon-heart:hover i:first-child {
   opacity: 0;
 }
-main article:last-child a .informations .icon-heart:hover i:last-child {
+.icon-heart:hover i:last-child {
   opacity: 1;
-}
-main article:last-child a:hover {
-  cursor: pointer;
-  transform: scale(1.01);
 }
 
 footer {
@@ -295,6 +307,7 @@ footer img {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 footer a {
+  width: fit-content;
   margin: 0 6% 2% 6%;
   color: #FFFFFF;
   text-decoration: none;

@@ -113,3 +113,4 @@ package-lock.json
 # Scss files
 scss
 css/style.css.map
+css/menu.css.map
