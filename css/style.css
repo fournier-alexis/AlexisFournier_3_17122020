@@ -75,7 +75,7 @@ main {
   top: 0;
   left: 0;
   background-color: #FFFFFF;
-  animation: afficherLoading 0ms;
+  animation: afficherLoading 4200ms;
   animation-fill-mode: forwards;
 }
 .container .rond {
@@ -87,13 +87,13 @@ main {
   background-image: linear-gradient(#FF79DA, #9356DC);
 }
 .container #r1 {
-  animation: bouger-rond 1400ms 150ms 0;
+  animation: bouger-rond 1400ms 150ms 3;
 }
 .container #r2 {
-  animation: bouger-rond 1400ms 500ms 0;
+  animation: bouger-rond 1400ms 500ms 3;
 }
 .container #r3 {
-  animation: bouger-rond 1400ms 900ms 0;
+  animation: bouger-rond 1400ms 900ms 3;
 }
 
 /* ------------------------------------------------------------------------------------------*/
@@ -119,7 +119,7 @@ main {
 
 main:not(.container), footer:not(.container) {
   visibility: hidden;
-  animation: afficherPage 0ms;
+  animation: afficherPage 4200ms;
   animation-fill-mode: forwards;
 }
 
