@@ -11,8 +11,12 @@
 </head>
 <body>
     <header id="entete">
-        <a href="../index.html"><i class="fas fa-arrow-left"></i></a>
-        <img src="../src/ohmyfood.svg" alt="Logo">
+        <div id="retour">
+            <a href="../index.html"><i class="fas fa-arrow-left"></i></a>
+        </div>
+        <div id="icon">
+            <img src="../src/ohmyfood.svg" alt="Logo">
+        </div>
     </header>
     <main>
         <header id="navigation">
@@ -21,127 +25,152 @@
         <article>
             <h2>Le délice des sens</h2>
             <div class="icon-heart">
+                <input id="heart" type="checkbox">
+                <label for="heart"></label>
                 <i class="far fa-heart"></i>
                 <i class="fas fa-heart"></i>
             </div>
         </article>
-        <article id="entree">
-            <h3>Entrées</h3>
-            <a href="#entree">
-                <div class="plat">
-                    <h4>Tartare de thon</h4>
-                    <div class="prix">
-                        <h5>Assaisonné au yuzu</h5>
-                        <p>25€</p>
+        <form action="leDeliceDesSens.html" method="post">
+            <fieldset id="entree">
+                <legend>Entrées</legend>
+                <article class="contenu">
+                    <input id="entree1" type="checkbox" name="entree" value="Tartare de thon">
+                    <label for="entree1"></label>
+                    <div class="plat">
+                        <h4>Tartare de thon</h4>
+                        <div class="prix">
+                            <h5>Assaisonné au yuzu</h5>
+                            <p>25€</p>
+                        </div>
                     </div>
-                </div>
-                <div class="selection">
-                    <i class="fas fa-check-circle"></i>
-                </div>
-            </a>
-            <a href="#entree">
-                <div class="plat">
-                    <h4>Bouchée de homard croustillant</h4>
-                    <div class="prix">
-                        <h5>Et sa farandole de petits légumes</h5>
-                        <p>35€</p>
+                    <div class="selection">
+                        <i class="fas fa-check-circle"></i>
                     </div>
-                </div>
-                <div class="selection">
-                    <i class="fas fa-check-circle"></i>
-                </div>
-            </a>
-            <a href="#entree">
-                <div class="plat">
-                    <h4>Velouté de cèpes</h4>
-                    <div class="prix">
-                        <h5>Aux truffes</h5>
-                        <p>20€</p>
+                </article>
+                <article class="contenu">
+                    <input id="entree2" type="checkbox" name="entree" value="Bouchée de homard croustillant">
+                    <label for="entree2"></label>
+                    <div class="plat">
+                        <h4>Bouchée de homard croustillant</h4>
+                        <div class="prix">
+                            <h5>Et sa farandole de petits légumes</h5>
+                            <p>35€</p>
+                        </div>
                     </div>
-                </div>
-                <div class="selection">
-                    <i class="fas fa-check-circle"></i>
-                </div>
-            </a>
-        </article>
-        <article id="plats">
-            <h3>Plats</h3>
-            <a href="#plats">
-                <div class="plat">
-                    <h4>Poulet rôti aux herbes de Provence</h4>
-                    <div class="prix">
-                        <h5>Et sa crème de truffe</h5>
-                        <p>40€</p>
+                    <div class="selection">
+                        <i class="fas fa-check-circle"></i>
                     </div>
-                </div>
-                <div class="selection">
-                    <i class="fas fa-check-circle"></i>
-                </div>
-            </a>
-            <a href="#plats">
-                <div class="plat">
-                    <h4>Langouste rôtie</h4>
-                    <div class="prix">
-                        <h5>Et ses légumes de saison</h5>
-                        <p>35€</p>
+                </article>
+                <article class="contenu">
+                    <input id="entree3" type="checkbox" name="entree" value="Velouté de cèpes">
+                    <label for="entree3"></label>
+                    <div class="plat">
+                        <h4>Velouté de cèpes</h4>
+                        <div class="prix">
+                            <h5>Aux truffes</h5>
+                            <p>20€</p>
+                        </div>
                     </div>
-                </div>
-                <div class="selection">
-                    <i class="fas fa-check-circle"></i>
-                </div>
-            </a>
-            <a href="#plats">
-                <div class="plat">
-                    <h4>Côte de boeuf Angus</h4>
-                    <div class="prix">
-                        <h5>Et sa purée de panais</h5>
-                        <p>44€</p>
+                    <div class="selection">
+                        <i class="fas fa-check-circle"></i>
                     </div>
-                </div>
-                <div class="selection">
-                    <i class="fas fa-check-circle"></i>
-                </div>
-            </a>
-        </article>
-        <article id="dessert">
-            <h3>Desserts</h3>
-            <a href="#dessert">
-                <div class="plat">
-                    <h4>Farandole de desserts</h4>
-                    <div class="prix">
-                        <h5>Du chef</h5>
-                        <p>18€</p>
+                </article>
+            </fieldset>
+            <fieldset id="plats">
+                <legend>Plats</legend>
+                <article class="contenu">
+                    <input id="plat1" type="checkbox" name="entree" value="Poulet rôti aux herbes de Provence">
+                    <label for="plat1"></label>
+                    <div class="plat">
+                        <h4>Poulet rôti aux herbes de Provence</h4>
+                        <div class="prix">
+                            <h5>Et sa crème de truffe</h5>
+                            <p>40€</p>
+                        </div>
                     </div>
-                </div>
-                <div class="selection">
-                    <i class="fas fa-check-circle"></i>
-                </div>
-            </a>
-            <a href="#dessert">
-                <div class="plat">
-                    <h4>Crème brulée</h4>
-                    <div class="prix">
-                        <h5>Revisitée</h5>
-                        <p>22€</p>
+                    <div class="selection">
+                        <i class="fas fa-check-circle"></i>
                     </div>
-                </div>
-                <div class="selection">
-                    <i class="fas fa-check-circle"></i>
-                </div>
-            </a>
-            <a href="#dessert">
-                <div class="plat">
-                    <h4>Tiramisu</h4>
-                    <div class="prix">
-                        <h5>À la noisette</h5>
-                        <p>23€</p>
+                </article>
+                <article class="contenu">
+                    <input id="plat2" type="checkbox" name="entree" value="Langouste rôtie">
+                    <label for="plat2"></label>
+                    <div class="plat">
+                        <h4>Langouste rôtie</h4>
+                        <div class="prix">
+                            <h5>Et ses légumes de saison</h5>
+                            <p>35€</p>
+                        </div>
                     </div>
-                </div>
-                <div class="selection">
-                    <i class="fas fa-check-circle"></i>
-                </div>
-            </a>
-        </article>
+                    <div class="selection">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </article>
+                <article class="contenu">
+                    <input id="plat3" type="checkbox" name="entree" value="Côte de boeuf Angus">
+                    <label for="plat3"></label>
+                    <div class="plat">
+                        <h4>Côte de boeuf Angus</h4>
+                        <div class="prix">
+                            <h5>Et sa purée de panais</h5>
+                            <p>44€</p>
+                        </div>
+                    </div>
+                    <div class="selection">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </article>
+            </fieldset>
+            <fieldset id="dessert">
+                <legend>Desserts</legend>
+                <article class="contenu">
+                    <input id="dessert1" type="checkbox" name="entree" value="Farandole de desserts">
+                    <label for="dessert1"></label>
+                    <div class="plat">
+                        <h4>Farandole de desserts</h4>
+                        <div class="prix">
+                            <h5>Du chef</h5>
+                            <p>18€</p>
+                        </div>
+                    </div>
+                    <div class="selection">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </article>
+                <article class="contenu">
+                    <input id="dessert2" type="checkbox" name="entree" value="Crème brulée">
+                    <label for="dessert2"></label>
+                    <div class="plat">
+                        <h4>Crème brulée</h4>
+                        <div class="prix">
+                            <h5>Revisitée</h5>
+                            <p>22€</p>
+                        </div>
+                    </div>
+                    <div class="selection">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </article>
+                <article class="contenu">
+                    <input id="dessert3" type="checkbox" name="entree" value="Tiramisu">
+                    <label for="dessert3"></label>
+                    <div class="plat">
+                        <h4>Tiramisu</h4>
+                        <div class="prix">
+                            <h5>À la noisette</h5>
+                            <p>23€</p>
+                        </div>
+                    </div>
+                    <div class="selection">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </article>
+            </fieldset>
+            <div id="commander">
+                <button type="submit">Commander</button>
+            </div>
+        </form>
     </main>
     <footer>
         <img src="../src/ohmyfood.svg" alt="logo footer">
