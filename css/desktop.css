@@ -1,3 +1,75 @@
+#entete {
+  margin-top: 3% !important;
+}
 
+main form #entree, main form #plats, main form #dessert {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+main form #entree .contenu, main form #plats .contenu, main form #dessert .contenu {
+  width: 50%;
+}
+main form #entree .contenu label, main form #plats .contenu label, main form #dessert .contenu label {
+  width: 50% !important;
+}
+main form #entree legend, main form #plats legend, main form #dessert legend {
+  margin-left: 25% !important;
+}
+main form #commander {
+  padding-bottom: 5% !important;
+}
+main article:first-of-type:not(.contenu) {
+  display: flex !important;
+  justify-content: space-between !important;
+  margin: 0 25% 0 25% !important;
+}
+main article:first-of-type:not(.contenu) h2 {
+  margin-left: 15px !important;
+}
+main article:first-of-type:not(.contenu) .icon-heart {
+  margin-left: 0 !important;
+}
+main #navigation {
+  padding-bottom: 3%;
+}
+main #navigation div i {
+  margin-right: 1%;
+}
+main #navigation nav {
+  padding-top: 3%;
+}
+main #navigation nav h1 {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+main #navigation nav h3 {
+  margin-top: 0;
+  margin-bottom: 3%;
+}
+main article:last-child:not(.contenu) {
+  padding-bottom: 5%;
+}
+main article:last-child:not(.contenu) h2, main article {
+  margin-top: 2%;
+}
+
+main #fonctionnement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #fonctionnement ol li {
+  padding-right: 200px;
+}
+
+footer {
+  align-items: center;
+  padding: 2% 0 !important;
+}
+footer img {
+  margin: 2% 0 !important;
+  width: 224px !important;
+}
 
 /*# sourceMappingURL=desktop.css.map */
